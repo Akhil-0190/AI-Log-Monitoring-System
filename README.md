@@ -1,40 +1,35 @@
 # AI Log Monitoring System
 
-An intelligent log analysis pipeline that combines feature engineering, anomaly detection, incident correlation, and LLM-powered operational insights to assist in system monitoring and incident investigation.
+An intelligent log monitoring and incident response system that automates log ingestion, anomaly detection, event correlation, and LLM-powered incident analysis for modern applications.
 
 ---
 
 ## Overview
 
-Modern systems generate thousands of logs every day, making manual investigation difficult and time-consuming.
+Modern software systems generate large volumes of logs, making manual monitoring and incident investigation increasingly difficult. This project provides an end-to-end analytics pipeline that automates log ingestion, preprocessing, anomaly detection, event correlation, and AI-assisted incident analysis through an interactive monitoring interface.
 
-This project automates log analysis by combining anomaly detection, log correlation, and LLM-generated explanations into a single workflow that helps identify unusual behavior and provides meaningful operational insights.
+The system combines traditional log analytics with local LLM inference to identify abnormal system behavior, correlate related incidents, and generate meaningful operational insights for faster troubleshooting.
 
 ---
 
 ## Problem Statement
 
-Operational logs often contain large volumes of noisy and unstructured information.
+Traditional log monitoring solutions primarily rely on manually configured rules and threshold-based alerts. While effective for detecting known failures, they often struggle to identify previously unseen anomalies or explain relationships between multiple events occurring across a system.
 
-Traditional monitoring solutions detect failures but frequently require engineers to manually investigate logs to determine the underlying cause.
-
-The objective of this project is to automate this workflow by detecting anomalies, correlating related events, and generating AI-assisted explanations that simplify incident investigation.
+This project demonstrates how automated log processing, anomaly detection, event correlation, and local LLM inference can be integrated into a unified monitoring workflow to improve incident investigation and operational visibility.
 
 ---
 
-## System Architecture
+## System Workflow
 
 ```text
 Application Logs
         │
         ▼
- Log Ingestion
+Log Ingestion
         │
         ▼
-Preprocessing
-        │
-        ▼
-Feature Engineering
+Preprocessing & Feature Engineering
         │
         ▼
 Anomaly Detection
@@ -43,61 +38,32 @@ Anomaly Detection
 Incident Correlation
         │
         ▼
-LLM Insight Generation
+LLM-powered Incident Analysis
         │
         ▼
-Alerts & Reports
+Alert Generation
         │
         ▼
-User Interface
+Interactive Dashboard
 ```
-
----
-
-## Project Structure
-
-```text
-alerts/
-analysis/
-data/
-ingestion/
-models/
-processing/
-ui/
-utils/
-
-app.py
-config.py
-report.py
-```
-
----
-
-## My Contributions
-
-- Designed the end-to-end system architecture.
-- Developed the log ingestion and preprocessing pipeline.
-- Implemented feature engineering for structured log analysis.
-- Built the anomaly detection pipeline.
-- Developed incident correlation workflows.
-- Integrated LLM-based incident explanation generation.
-- Built reporting and alert generation workflows.
 
 ---
 
 ## Key Features
 
-- Log ingestion
-- Feature engineering
+- Automated log ingestion
+- Log preprocessing and feature engineering
 - Anomaly detection
-- Incident correlation
-- LLM-generated explanations
+- Event correlation across related events
+- LLM-powered incident analysis
+- Root cause analysis support
+- Interactive monitoring dashboard
 - Alert generation
 - Report generation
 
 ---
 
-## Technology Stack
+## Technologies Used
 
 ### Programming
 
@@ -105,7 +71,8 @@ report.py
 
 ### AI
 
-- OpenAI API
+- Ollama
+- Llama
 
 ### Data Processing
 
@@ -118,25 +85,51 @@ report.py
 
 ---
 
-## Engineering Highlights
+## My Contributions
 
-- Modular pipeline architecture separating ingestion, processing, modeling, analysis, alerts, and reporting.
-- Structured feature engineering before anomaly detection.
-- Correlation pipeline for grouping related operational events.
-- LLM-assisted explanations to improve incident investigation.
-- Modular folder structure supporting future extension.
+This project was developed collaboratively as a three-member final-year project.
+
+My primary contributions included:
+
+- Designing the overall system architecture.
+- Developing the backend analytics pipeline.
+- Building the log ingestion workflow.
+- Implementing preprocessing and feature engineering.
+- Developing anomaly detection and event correlation modules.
+- Integrating local LLM inference using Ollama.
+- Designing the AI-assisted incident analysis workflow.
 
 ---
 
-## Repository Structure
+## Engineering Highlights
 
-| Folder | Purpose |
-|---------|---------|
-| ingestion | Log generation and ingestion |
-| processing | Feature engineering and preprocessing |
-| models | Anomaly detection models |
-| analysis | Root cause analysis |
-| alerts | Alert generation |
-| ui | User interface |
-| utils | Shared helper utilities |
-| data | Sample datasets |
+- Designed a modular architecture separating ingestion, processing, analytics, alerts, reporting, and user interface components.
+- Automated feature engineering before anomaly detection.
+- Built an event correlation pipeline to group related incidents.
+- Integrated local LLM inference using Ollama for AI-assisted operational insights.
+- Designed an extensible backend architecture to support future monitoring capabilities.
+
+---
+
+## Project Documentation
+
+Detailed project documentation, including the complete system architecture, workflow diagrams, implementation methodology, UI screenshots, and research paper, is available below.
+
+- 📄 **Research Paper:** [researchPaper.pdf](docs/researchPaper.pdf)
+- 🖼️ **Project Screenshots:** [project_pics.pdf](docs/project_pics.pdf)
+
+---
+
+## Repository Scope
+
+This repository contains the implementation of the log ingestion, preprocessing, anomaly detection, incident correlation, AI-assisted analysis, reporting, and dashboard components developed for the project.
+
+The accompanying documentation provides additional architectural details, workflow diagrams, implementation methodology, and interface screenshots.
+
+---
+
+## Acknowledgements
+
+Developed collaboratively as a final-year Computer Science and Engineering project.
+
+My primary contributions focused on system architecture, backend development, analytics pipeline implementation, and AI integration using local LLM inference.
